@@ -22,5 +22,10 @@ git remote add origin https://github.com/SkrinLeo/contract_system.git
 
 Write-Host "`n=== Pushing to GitHub ===" -ForegroundColor Cyan
 git push -u origin main
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "`nPush rejected: remote already has files (e.g. README)." -ForegroundColor Yellow
+    Write-Host "Run: .\fix-push.ps1" -ForegroundColor Yellow
+    exit 1
+}
 
-Write-Host "`nDone!" -ForegroundColor Green
+Write-Host "`nSuccess! Repository is on GitHub." -ForegroundColor Green
