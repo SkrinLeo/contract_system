@@ -4,19 +4,7 @@
 
 ## Онлайн-версия (GitHub Pages)
 
-После включения GitHub Pages приложение доступно по адресу:
-
-**https://skrinleo.github.io/contract_system/**
-
 Данные хранятся в `localStorage` браузера (без сервера).
-
-### Как включить GitHub Pages
-
-1. Откройте репозиторий на GitHub
-2. **Settings** → **Pages**
-3. **Build and deployment** → **Source**: `Deploy from a branch`
-4. **Branch**: `main` → папка `/ (root)` → **Save**
-5. Подождите 1–2 минуты и откройте ссылку выше
 
 ## Локальный запуск (FastAPI + SQLite)
 
